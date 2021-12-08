@@ -1,0 +1,63 @@
+<html>
+  <body>
+    <div id="extension-addon-sidebar-modifier-toggle"></div>
+	<div id="extension-addon-sidebar-modifier-resizer"></div>
+	<style>
+	#extension-addon-sidebar-modifier-toggle {
+		position: absolute;
+		cursor: pointer;
+		z-index: 98;
+		height: 50px;
+		width: 6px;
+		left: -6.5px;
+		top: 50%;
+		background: #eee;
+		border: 1px solid #d9d9d9;
+		border-right: 0px;
+		box-sizing: border-box;
+	}
+	
+	#extension-addon-sidebar-modifier-toggle:after {
+		position: absolute;
+		border-right: 4px solid #796c6c;
+		border-top: 4px solid transparent;
+		border-bottom: 4px solid transparent;
+		top: 20px;
+		left: 0;
+		content: "";
+	}
+	
+	#extension-addon-sidebar-modifier-toggle:before {
+		content:'';
+		position:absolute;
+		top: 0px;
+		bottom: 0px;
+		left: -4px;
+		right: -4px;
+	}
+
+	#extension-addon-sidebar-modifier-toggle:hover {
+		background: #ddd;
+	}
+	
+	#extension-addon-sidebar-modifier-resizer {
+		position: absolute;
+		left: -2.5px;
+		width: 4px;
+		height: 100%;
+		cursor: ew-resize;
+	}
+	
+	#extension-addon-sidebar-modifier-resizer:hover {
+		background: repeating-linear-gradient(
+			-45deg,
+			transparent,
+			transparent 5px,
+			#ccc 5px,
+			#ccc 10px
+	    )
+	}
+	</style>
+  </body>
+</html>
+	
